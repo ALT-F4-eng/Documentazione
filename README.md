@@ -3,7 +3,7 @@
 </div>
 
 # Documentazione
-Questo repository contiene i Documeti compilati in PDF di progetto del corso di Ingegneria del Software 2024-2025.
+Questo repository contiene i documeti compilati in PDF di progetto del corso di Ingegneria del Software 2024-2025.
 
 [Visita il nostro sito](alt-f4-eng.github.io/Documentazione/)
 
