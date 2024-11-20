@@ -1,4 +1,4 @@
-<div style="justify-content: center;">
+<div align="center">
   <img alt="Logo ALt+F4" src="Assets/logo.jpeg" width="200">
 </div>
 
