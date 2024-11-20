@@ -1,4 +1,6 @@
-<img alt="Logo ALt+F4" src="Assets/logo.jpeg" width="200" >
+<div style="text-align: center;">
+  <img alt="Logo ALt+F4" src="Assets/logo.jpeg" width="200">
+</div>
 
 # Documentazione
 Questo repository contiene i Documeti compilati in PDF di progetto del corso di Ingegneria del Software 2024-2025.
