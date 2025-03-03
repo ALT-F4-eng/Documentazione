@@ -1,6 +1,6 @@
 const owner = 'ALT-F4-eng';
 const repo = 'Documentazione';
-const dirsToIgnore = ['Assets', 'Js', 'Style']
+const dirsToIgnore = ['Assets', 'Js', 'Style', 'Immagini']
 
 async function getFromRepo(owner, repo, path='') {
 
