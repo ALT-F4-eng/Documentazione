@@ -26,7 +26,7 @@ async function createSubTrees(path='') {
             li.textContent = e.name.replace(/([A-Z])/g, " $1"); 
             li.setAttribute('class', 'dir');
 
-            res.prepe(li);
+            res.append(li);
 
             res.appendChild(await createSubTrees(e.path));
         }
@@ -38,7 +38,7 @@ async function createSubTrees(path='') {
             link.setAttribute('target', '_blank');
             link.textContent = e.name;
 
-            li.appendChild(link)
+            li.appendChild(link);
             res.prepend(li);
         }
 
@@ -98,6 +98,7 @@ cerateRepoTree().then(res=>{
     }, 100);
     
 }).catch((error => {
+    console.log(error)
     errTitle = document.getElementById('error-title')
     errDescription = document.getElementById('error-description')
 
