@@ -26,7 +26,7 @@ async function createSubTrees(path='') {
             li.textContent = e.name.replace(/([A-Z])/g, " $1"); 
             li.setAttribute('class', 'dir');
 
-            res.appendChild(li);
+            res.prepe(li);
 
             res.appendChild(await createSubTrees(e.path));
         }
@@ -34,11 +34,12 @@ async function createSubTrees(path='') {
             var li = document.createElement('li');
             var link = document.createElement('a');
 
-            link.setAttribute('href', e.download_url);
+            link.setAttribute('href', e.html_url);
+            link.setAttribute('target', '_blank');
             link.textContent = e.name;
 
             li.appendChild(link)
-            res.appendChild(li);
+            res.prepend(li);
         }
 
     }
@@ -63,7 +64,7 @@ async function cerateRepoTree() {
 
             sec.appendChild(h2);
             sec.appendChild(await createSubTrees(m.name));
-            milestonesList.push(sec);
+            milestonesList.unshift(sec);
         }
 
     }
