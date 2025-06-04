@@ -22,6 +22,7 @@ async function createSubTrees(path='') {
 
     for (const e of content) {
         if(e.type === 'dir') {
+
             var li = document.createElement('li');
             li.textContent = e.name.replace(/([A-Z])/g, " $1"); 
             li.setAttribute('class', 'dir');
@@ -69,7 +70,7 @@ async function cerateRepoTree() {
 
     }
 
-    return milestonesList;
+    return Array(milestonesList[1], milestonesList[0], milestonesList[2]);
   
     
 }
@@ -98,7 +99,7 @@ cerateRepoTree().then(res=>{
     }, 100);
     
 }).catch((error => {
-    console.log(error)
+
     errTitle = document.getElementById('error-title')
     errDescription = document.getElementById('error-description')
 
